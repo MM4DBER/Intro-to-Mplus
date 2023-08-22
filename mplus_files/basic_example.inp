@@ -1,0 +1,21 @@
+TITLE:
+  Practice 01 - Explore descriptives (TYPE = BASIC)
+
+DATA:
+  FILE = basic_example.dat;
+ 
+VARIABLE:
+
+  NAMES = Enjoy Useful Logical Job Adult Female; 
+
+  MISSING = .;
+
+  USEVAR = Enjoy Useful Logical Job Adult Female;
+
+ANALYSIS:
+
+  TYPE = BASIC; 
+
+! Use the exclamation symbol to add comments, reminders, or annotations within your Mplus files 
+
+!!! END OF INPUT FILE !!!
