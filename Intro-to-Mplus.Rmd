@@ -3,23 +3,15 @@ title: "Introduction to Mplus"
 author: "MM4DBER Training Team"
 date: "Updated: `r format(Sys.time(), '%B %d, %Y')`"
 output:
-  pdf_document:
   html_document:
     theme: flatly
+  pdf_document:
 editor_options:
   markdown:
     wrap: sentence
 header-includes:
 - \usepackage{wrapfig} 
 ---
-
-```{r, echo=FALSE}
-htmltools::img(src = knitr::image_uri(file.path("figures/mm4dber_white.jpg")), 
-               alt = 'logo', 
-               style = 'position:absolute; top:0; right:0; padding:10px;',
-               width ="250",
-               height ="193")
-```
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE,
@@ -28,20 +20,17 @@ knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE,
 
 # --------------------------------------------------------------------------------------
 
+![](figures/mm4dber_white.jpg){style="float: left;" width="300"}
 
-```{r, echo=FALSE, out.width='35%', fig.align='center'}
-knitr::include_graphics("figures/NSF-Logo.png")
-```
+![](figures/NSF-Logo.png){style="float: left;" width="300"}
 
 # --------------------------------------------------------------------------------------
 
-Mixture Modeling for Discipline Based Education Researchers (MM4DBER) is an NSF funded training grant to support STEM Education scholars in integrating mixture modeling into their research.
+> Mixture Modeling for Discipline Based Education Researchers (MM4DBER) is an NSF funded training grant to support STEM Education scholars in integrating mixture modeling into their research.
 
--   Please [visit our website](https://mm4dbers.education.ucsb.edu/) to learn more and apply for the year-long fellowship.
+#### Download project materials here: [GitHub Repository](https://github.com/MM4DBER/Pre-training-Day5)
 
--   Follow us on [Twitter](https://twitter.com/mm4dbers)!
-
-Visit our [GitHub](https://github.com/MM4DBER/intro-to-rstudio) account to download the materials needed for this walkthrough.
+#### Return to landing page here: [MM4DBER Landing Page](https://mm4dber.github.io/)
 
 # --------------------------------------------------------------------------------------
 
@@ -50,6 +39,9 @@ Visit our [GitHub](https://github.com/MM4DBER/intro-to-rstudio) account to downl
 Exercise: Walk through how to run basic descriptive statistics using the Mplus program.
 
 Learning objective: To understand how Mplus syntax works and, in preparation for future exercises, be able to differentiate `R` from `Mplus` syntax.
+
+# --------------------------------------------------------------------------------------
+
 
 ### Step 1: Open Mplus
 
@@ -63,7 +55,7 @@ Learning objective: To understand how Mplus syntax works and, in preparation for
 
 ![](figures/input.jpg)
 
-- Open the file titled `basic_example.inp` located in the `mplus_files` folder in Mplus.
+- Open the file titled `basic_example.inp` located in the `Intro_to_Mplus` folder in Mplus.
 - All syntax or input files for Mplus are a *.inp* file.
 - You may also create a new *.inp* file directly in Mplus and populate the syntax there.
 - For now, we can use one that is already complete.
